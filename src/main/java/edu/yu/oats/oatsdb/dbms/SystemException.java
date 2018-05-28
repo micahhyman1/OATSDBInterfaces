@@ -1,8 +1,8 @@
 package edu.yu.oats.oatsdb.dbms;
 
-/** The SystemException exception is thrown by the transaction manager to
- * indicate that it has encountered an unexpected error condition that prevents
- * future transaction services from proceeding.
+/** SystemException is thrown by the transaction manager to indicate that it
+ * has encountered an unexpected error condition that prevents future
+ * transaction services from proceeding.
  *
  * Design note: API loosely modeled on javax.transaction APIs
  * https://docs.oracle.com/javaee/5/api/javax/transaction/package-summary.html

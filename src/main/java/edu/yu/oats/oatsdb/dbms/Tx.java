@@ -1,7 +1,6 @@
 package edu.yu.oats.oatsdb.dbms;
 
-/** The TxMgr interface defines the methods that allow the DBMS manage
- * transaction boundaries.
+/** Interface that defines a "transaction" with respect to clients
  *
  * Design note: API loosely modeled on javax.transaction APIs
  * https://docs.oracle.com/javaee/5/api/javax/transaction/package-summary.html
@@ -19,7 +18,6 @@ public interface Tx {
    * Transaction object.
    *
    * @return Appropriate TxStatus enum value.
-
    * @throws SystemException Thrown if the transaction manager encounters an
    * unexpected error condition.
    */

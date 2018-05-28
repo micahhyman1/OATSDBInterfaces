@@ -1,6 +1,9 @@
 package edu.yu.oats.oatsdb.dbms;
 
-/** The TxStatus enum defines the set of transaction status codes.
+/** The TxStatus enum defines the set of transaction status codes.  
+ *
+ * Note: these values represent a "point in time" window into a transaction's
+ * state, whose state may change in the next moment.
  *
  * Design note: API loosely modeled on javax.transaction APIs
  * https://docs.oracle.com/javaee/5/api/javax/transaction/package-summary.html

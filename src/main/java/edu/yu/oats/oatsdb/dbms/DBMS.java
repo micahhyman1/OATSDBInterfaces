@@ -1,11 +1,9 @@
 package edu.yu.oats.oatsdb.dbms;
 
-/** Interface for DB Management System.  
+/** Interface for DB Management System. 
  *
  * Specifies a client model that interacts with "named" Maps of a given key and
  * value class.
- *
- *
  * 
  * @author Avraham Leff
  */

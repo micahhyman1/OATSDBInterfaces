@@ -1,7 +1,7 @@
 package edu.yu.oats.oatsdb.dbms;
 
-/** Runtime exception thrown when client accesses a "transaction resource"
- * (e.g., a DBMS Map or an entry in a DBMS Map when not in a transaction.
+/** Runtime exception thrown when client accesses a "transactional resource"
+ * (e.g., a DBMS Map or an entry in a DBMS Map) when not in a transaction.
  * 
  * @author Avraham Leff
  */

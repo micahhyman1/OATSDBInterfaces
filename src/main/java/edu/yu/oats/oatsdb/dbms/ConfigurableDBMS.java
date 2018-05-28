@@ -1,7 +1,7 @@
 package edu.yu.oats.oatsdb.dbms;
 
-/** Extends the "DB Management System" interface with an API that allows for configuration of the SBMS.
- *
+/** Extends the "DB Management System" interface with an API that allows for
+ * configuration of the DBMS.
  * 
  * @author Avraham Leff
  */

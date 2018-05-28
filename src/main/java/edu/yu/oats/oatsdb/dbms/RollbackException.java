@@ -1,7 +1,8 @@
 package edu.yu.oats.oatsdb.dbms;
 
-/** RollbackException exception is thrown when the transaction has been marked
-for rollback only or the transaction has been rolled back instead of committed.
+/** RollbackException thrown when a client's transactional operation
+ * (implicitly) references a transaction that has been marked for rollback only
+ * or the transaction has been rolled back instead of committed.
  *
  * Design note: API loosely modeled on javax.transaction APIs
  * https://docs.oracle.com/javaee/5/api/javax/transaction/package-summary.html

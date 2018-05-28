@@ -1,6 +1,6 @@
 package edu.yu.oats.oatsdb.dbms;
 
-/** The TxMgr interface defines the methods that allow the DBMS manage
+/** The TxMgr interface defines the methods that allow the DBMS to manage
  * transaction boundaries.
  *
  * Design note: API loosely modeled on javax.transaction APIs
@@ -43,7 +43,7 @@ public interface TxMgr {
    */
   void rollback() throws IllegalStateException, SystemException;
 
-  /** Get the transaction object that represents the transaction context of the
+  /** Return the transaction object that represents the transaction context of the
    * calling thread.  If no transaction is associated with the current thread,
    * returns a Transaction whose getStatus() equals TxStatus.NO_TRANSACTION.
    *

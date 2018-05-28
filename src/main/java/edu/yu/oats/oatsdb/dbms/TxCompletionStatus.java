@@ -16,9 +16,10 @@ public enum TxCompletionStatus {
   ROLLEDBACK /* Completed unsuccessfully */
   ;          // needed because methods will follow
 
-  /** Implements state-transitions based on TxStatus value by examining the
-   * current TxCompletionStatus and TxStatus values, returning a new
-   * TxCompletionStatus value as approriate.
+  /** Implements state-transitions for a given TxCompletionStatus, returning an
+   * "updated" enum value that reflects the change implied by the associated
+   * transaction's new TxStatus value.  This method does not change the value
+   * of the currentStatus parameter: it returns a new TxCompletionStatus value.
    *
    * NOTE: Does not do validity checking on the current TxCompletionStatus
    * relative to the incoming TxStatus
